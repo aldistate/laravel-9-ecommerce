@@ -1,0 +1,20 @@
+Project E-Commerce using laravel version 9
+
+//User
+ -> User can register with their name, email. and password
+ ->User can login using email and password
+ ->User can view all product
+ ->User can view detail of a specific product
+ ->User can add product to their cart
+ ->User can increase or decrease product quantity from the cart
+ ->User can checkout the cart
+ ->User can view past orders
+ ->User can submit payment for their order
+ ->User can change their name and password
+
+//Admin
+ ->Admin is created using seeder
+ ->Admin can add new product
+ ->Admin can edit products
+ ->Admin can delete products
+ ->Admin can confirm order payment
