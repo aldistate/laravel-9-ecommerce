@@ -39,4 +39,10 @@ class ProductController extends Controller
 
         return Redirect::route('create_product');
     }
+
+    public function index_product()
+    {
+        $products = Product::all();
+        return view('index_product', compact('products'));
+    }
 }

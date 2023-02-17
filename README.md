@@ -4,4 +4,5 @@
 <ul>
   <li>Authentication Scaffolding</li>
   <li>Create Product</li>
+  <li>Show All Product</li>
 </ul>
