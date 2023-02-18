@@ -81,4 +81,10 @@ class ProductController extends Controller
 
         return Redirect::route('show_product', $product);
     }
+
+    public function delete_product(Product $product)
+    {
+        $product->delete();
+        return Redirect::route('index_product');
+    }
 }

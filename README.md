@@ -7,4 +7,5 @@
   <li>Show All Product</li>
   <li>Show Detail Product</li>
   <li>Update Product</li>
+  <li>Delete Product</li>
 </ul>
