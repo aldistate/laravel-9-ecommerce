@@ -6,4 +6,5 @@
   <li>Create Product</li>
   <li>Show All Product</li>
   <li>Show Detail Product</li>
+  <li>Update Product</li>
 </ul>

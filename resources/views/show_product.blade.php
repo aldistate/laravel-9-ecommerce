@@ -15,6 +15,9 @@
   <p>Stock : {{ $product->stock }}</p>
   <img src="{{ url('storage/' . $product->image) }}" alt="{{ $product->name }}" height="200px">
   <br>
+  <form action="{{ route('edit_product', $product) }}" method="get">
+    <button>Edit Product</button>
+  </form>
   <a href="{{ route('index_product') }}">Back</a>
 </body>
 
