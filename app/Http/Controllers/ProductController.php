@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 
@@ -42,8 +43,12 @@ class ProductController extends Controller
 
     public function index_product()
     {
+        $user = Auth::user();
         $products = Product::all();
-        return view('index_product', compact('products'));
+        return view('index_product', [
+            'products' => $products,
+            'user' => $user,
+        ]);
     }
 
     public function show_product(Product $product)

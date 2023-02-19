@@ -8,4 +8,5 @@
   <li>Show Detail Product</li>
   <li>Update Product</li>
   <li>Delete Product</li>
+  <li>Add to Cart</li>
 </ul>

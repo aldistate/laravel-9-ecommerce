@@ -18,6 +18,11 @@
   <form action="{{ route('edit_product', $product) }}" method="get">
     <button>Edit Product</button>
   </form>
+  <form action="{{ route('add_to_cart', $product) }}" method="post">
+    @csrf
+    <input type="number" name="amount" value="1">
+    <button type="submit">Add to Cart</button>
+  </form>
   <a href="{{ route('index_product') }}">Back</a>
 </body>
 
