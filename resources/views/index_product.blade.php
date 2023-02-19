@@ -20,6 +20,7 @@
     <a href="{{ route('login') }}">Login</a>
     <a href="{{ route('register') }}">Register</a>
   @endif
+  <a href="{{ route('show_cart') }}">Cart</a>
   @foreach ($products as $product)
     <p>Name : {{ $product->name }}</p>
     <img src="{{ url('storage/' . $product->image) }}" alt="{{ $product->name }}" height="200px">

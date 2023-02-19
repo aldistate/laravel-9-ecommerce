@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Redirect;
 
 class CartController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function add_to_cart(Product $product, Request $request)
     {
         $request->validate([
@@ -26,5 +31,14 @@ class CartController extends Controller
         ]);
 
         return Redirect::route('index_product');
+    }
+
+    public function show_cart()
+    {
+        $user_id = Auth::id();
+        $carts = Cart::where('user_id', $user_id)->get();
+        return view('show_cart', [
+            'carts' => $carts,
+        ]);
     }
 }

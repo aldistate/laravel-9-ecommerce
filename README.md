@@ -9,4 +9,5 @@
   <li>Update Product</li>
   <li>Delete Product</li>
   <li>Add to Cart</li>
+  <li>Show Cart</li>
 </ul>
