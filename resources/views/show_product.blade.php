@@ -9,11 +9,6 @@
 </head>
 
 <body>
-  @if ($errors->any())
-    @foreach ($errors->all() as $error)
-      <p>{{ $error }}</p>
-    @endforeach
-  @endif
   <p>Name : {{ $product->name }}</p>
   <p>Description : {{ $product->description }}</p>
   <p>Price : Rp.{{ number_format($product->price) }}</p>
@@ -28,6 +23,11 @@
     <input type="number" name="amount" value="1">
     <button type="submit">Add to Cart</button>
   </form>
+  @if ($errors->any())
+    @foreach ($errors->all() as $error)
+      <p>{{ $error }}</p>
+    @endforeach
+  @endif
   <a href="{{ route('index_product') }}">Back</a>
 </body>
 
