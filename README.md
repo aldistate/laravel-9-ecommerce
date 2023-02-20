@@ -11,4 +11,5 @@
   <li>Add to Cart</li>
   <li>Show Cart</li>
   <li>Update Cart</li>
+  <li>Delete Cart</li>
 </ul>

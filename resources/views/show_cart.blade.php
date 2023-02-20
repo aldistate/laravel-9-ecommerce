@@ -24,6 +24,14 @@
       <input type="number" name="amount" value="{{ $cart->amount }}">
       <button type="submit">Update Amount</button>
     </form>
+    <br>
+    <form action="{{ route('delete_cart', $cart) }}" method="post">
+      @method('delete')
+      @csrf
+      <button type="submit">Delete Item</button>
+    </form>
+    <br>
+    <br>
   @endforeach
   <a href="{{ route('index_product') }}">Back to Home</a>
 </body>
