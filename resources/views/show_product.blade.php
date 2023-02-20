@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  @if ($errors->any())
+    @foreach ($errors->all() as $error)
+      <p>{{ $error }}</p>
+    @endforeach
+  @endif
   <p>Name : {{ $product->name }}</p>
   <p>Description : {{ $product->description }}</p>
   <p>Price : Rp.{{ number_format($product->price) }}</p>
