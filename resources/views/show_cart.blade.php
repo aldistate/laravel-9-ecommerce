@@ -33,6 +33,10 @@
     <br>
     <br>
   @endforeach
+  <form action="{{ route('checkout') }}" method="post">
+    @csrf
+    <button type="submit">Checkout</button>
+  </form>
   <a href="{{ route('index_product') }}">Back to Home</a>
 </body>
 
