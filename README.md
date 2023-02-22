@@ -13,4 +13,5 @@
   <li>Update Cart</li>
   <li>Delete Cart</li>
   <li>Checkout</li>
+  <li>Show Order</li>
 </ul>
