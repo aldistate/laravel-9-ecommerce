@@ -17,10 +17,10 @@
       <p>Unpaid</p>
       @if ($order->payment_receipt)
         <a href="{{ url('storage/' . $order->payment_receipt) }}">Show Payment Receipt</a>
-      <form action="{{ route('confirm_payment', $order) }}" method="post">
-        @csrf
-        <button type="submit">Confirm Payment</button>
-      </form>
+        <form action="{{ route('confirm_payment', $order) }}" method="post">
+          @csrf
+          <button type="submit">Confirm Payment</button>
+        </form>
       @endif
     @endif
     <br>

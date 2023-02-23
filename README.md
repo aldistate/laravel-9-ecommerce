@@ -17,4 +17,6 @@
   <li>Show Specific Order</li>
   <li>Submit Payment Receipt</li>
   <li>Confirm Payment</li>
+  <li>Show Profile</li>
+  <li>Change Profile Details</li>
 </ul>
