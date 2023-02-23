@@ -16,4 +16,5 @@
   <li>Show Order</li>
   <li>Show Specific Order</li>
   <li>Submit Payment Receipt</li>
+  <li>Confirm Payment</li>
 </ul>
