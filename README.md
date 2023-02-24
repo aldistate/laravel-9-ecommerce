@@ -19,4 +19,5 @@
   <li>Confirm Payment</li>
   <li>Show Profile</li>
   <li>Change Profile Details</li>
+  <li>Styling UI</li>
 </ul>
