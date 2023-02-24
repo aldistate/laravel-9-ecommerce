@@ -58,6 +58,9 @@ class ProductController extends Controller
 
     public function edit_product(Product $product)
     {
+        if (!auth()->check() || !auth()->user()->is_admin) {
+            abort(403);
+        }
         return view('edit_product', compact('product'));
     }
 
