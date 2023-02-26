@@ -20,4 +20,5 @@
   <li>Show Profile</li>
   <li>Change Profile Details</li>
   <li>Styling UI</li>
+  <li>Show Total Price in Cart and Order</li>
 </ul>

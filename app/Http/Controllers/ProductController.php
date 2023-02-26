@@ -12,6 +12,9 @@ class ProductController extends Controller
 {
     public function create_product()
     {
+        if (!auth()->check() || !auth()->user()->is_admin) {
+            abort(403);
+        }
         return view('create_product');
     }
 
