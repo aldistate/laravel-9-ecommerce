@@ -22,4 +22,6 @@
   <li>Styling UI</li>
   <li>Show Total Price in Cart and Order</li>
   <li>Admin Seeding</li>
+  <li>Middleware Admin</li>
+  <li>Middleware Group</li>
 </ul>
