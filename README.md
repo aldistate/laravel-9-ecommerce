@@ -21,4 +21,5 @@
   <li>Change Profile Details</li>
   <li>Styling UI</li>
   <li>Show Total Price in Cart and Order</li>
+  <li>Admin Seeding</li>
 </ul>
