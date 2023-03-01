@@ -24,4 +24,5 @@
   <li>Admin Seeding</li>
   <li>Middleware Admin</li>
   <li>Middleware Group</li>
+  <li>Roles for Order Feature</li>
 </ul>

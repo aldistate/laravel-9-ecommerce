@@ -20,7 +20,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
 Auth::routes();
 
 Route::get('/', [ProductController::class, 'index_product'])->name('index_product');
