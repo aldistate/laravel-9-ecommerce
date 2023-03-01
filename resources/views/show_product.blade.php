@@ -17,6 +17,7 @@
                                 <h3>Rp. {{ number_format($product->price) }}</h3>
                                 <hr>
                                 <p>{{ $product->stock }} left</p>
+                                @if (!Auth::user()->is_admin)
                                     <form action="{{ route('add_to_cart', $product) }}" method="post">
                                         @csrf
                                         <div class="input-group mb-3">
@@ -28,11 +29,12 @@
                                             </div>
                                         </div>
                                     </form>
-                                    @if (Auth::user()->is_admin)
+                                @endif
+                                @if (Auth::user()->is_admin)
                                     <form action="{{ route('edit_product', $product) }}" method="get">
                                         <button type="submit" class="btn btn-primary">Edit product</button>
                                     </form>
-                                    @endif
+                                @endif
                             </div>
                         </div>
                         @if ($errors->any())

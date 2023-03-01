@@ -60,20 +60,20 @@
                                         <a class="dropdown-item" href="{{ route('create_product') }}">
                                             Create product
                                         </a>
-                                        <a class="dropdown-item" href="{{ route('index_order') }}">
-                                            Order
-                                        </a>
                                     @else
                                         <a class="dropdown-item" href="{{ route('show_cart') }}">
                                             Cart
                                         </a>
                                     @endif
+                                    <a class="dropdown-item" href="{{ route('index_order') }}">
+                                        Order
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('show_profile') }}">
                                         Profile
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
